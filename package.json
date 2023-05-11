@@ -1,0 +1,51 @@
+{
+  "name": "anime-scraper",
+  "description": "Provide more than 3000 anime with engSub and VietSub",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "author": "Dat Tran",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "@consumet/extensions": "^1.4.17",
+    "@fastify/cors": "^7.0.0",
+    "@google-cloud/functions-framework": "^3.2.0",
+    "@google-cloud/scheduler": "^3.3.1",
+    "@google-cloud/storage": "^6.9.5",
+    "algoliasearch": "^4.16.0",
+    "atob": "^2.1.2",
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "fastify": "^3.29.5",
+    "firebase": "^9.9.4",
+    "firebase-admin": "^11.7.0",
+    "firebase-functions": "^4.3.1",
+    "googleapis": "^118.0.0",
+    "jsonfile": "^6.1.0",
+    "node-cron": "^3.0.2",
+    "playwright": "^1.33.0",
+    "puppeteer": "^16.2.0",
+    "puppeteer-core": "^17.1.3",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-adblocker": "^2.13.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0",
+    "nodemon": "^2.0.19",
+    "prettier": "2.8.8"
+  },
+  "private": true
+}
